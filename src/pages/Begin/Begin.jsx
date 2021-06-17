@@ -1,9 +1,10 @@
 import React from 'react';
+import Icons from '../../shared/assets';
 
 const Begin = () => {
   return(
     <div>
-      They call themself the gardians of the galaxy
+      <img src={Icons.earth} alt='earth'/>
     </div>
   )
 }

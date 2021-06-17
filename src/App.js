@@ -1,5 +1,4 @@
-import Begin from './pages/begin';
-import './App.css';
+import Begin from './pages/Begin/Begin';
 
 function App() {
   return (
