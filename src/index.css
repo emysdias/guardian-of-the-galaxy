@@ -1,5 +1,6 @@
 body {
   background-color: #1D1B38;
+  background-image: url("./shared/assets/starry.png");
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

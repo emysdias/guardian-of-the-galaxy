@@ -1,4 +1,4 @@
-import Earth from './assets/planeta.png';
+import Earth from './assets/earth.png';
 import Groot1 from './assets/Groot1.png';
 import Groot2 from './assets/Groot2.png';
 import Groot3 from './assets/Groot3.png';
