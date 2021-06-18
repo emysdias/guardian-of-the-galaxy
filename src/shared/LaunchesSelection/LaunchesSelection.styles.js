@@ -1,0 +1,23 @@
+import styled from "styled-components";
+import theme from "../theme";
+
+export const Card = styled.section`
+  width: ${theme.size[2]};
+  height: ${theme.size[1]};
+  background-color: ${theme.colors.white};
+  border-radius: ${theme.spacing.pixels[3]};
+  text-align: center;
+  margin-right: ${theme.spacing.pixels[3]};
+
+  img {
+    margin-top: ${theme.spacing.pixels[2]};
+    width: ${theme.size[3]};
+    height: ${theme.size[3]};
+  }
+  .CardText {
+    margin-top: ${theme.spacing.pixels[2]};
+    color: ${theme.colors.purple[4]};
+    font-weight: ${theme.typography.weight.bold};
+    font-size: ${theme.typography.normal};
+  }
+`;

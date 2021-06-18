@@ -1,13 +1,13 @@
-import Begin from './pages/Begin/Begin';
-import Icons from './shared/assets';
-import './App.css';
+import Begin from "./pages/Begin/Begin";
+import Icons from "./shared/assets";
+import "./App.css";
 
 function App() {
   return (
     <section>
-      <Begin/>
+      <Begin />
       <section className="background-earth">
-        <img src={Icons.earth} alt='earth'/>
+        <img src={Icons.earth} alt="earth" />
       </section>
     </section>
   );

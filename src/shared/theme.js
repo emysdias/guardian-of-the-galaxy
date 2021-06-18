@@ -11,13 +11,25 @@ const theme = {
   },
   typography: {
     title: "30px",
-    normal: "24px",
+    normal: "20px",
     weight: {
       bold: "bold",
     },
-    spacing: {
+  },
+  spacing: {
+    pixels: {
       1: "50px",
+      2: "30px",
+      3: "20px",
     },
+    porcent: {
+      1: "10%",
+    },
+  },
+  size: {
+    1: "250px",
+    2: "230px",
+    3: "79px",
   },
 };
 

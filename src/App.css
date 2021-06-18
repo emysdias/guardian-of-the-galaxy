@@ -1,7 +1,8 @@
 .background-earth {
+  display: flex;
   position: absolute;
-  display: block;
   width: 100%;
-  text-align: center;
+  justify-content: center;
   bottom: 0;
+  z-index: 0;
 }
