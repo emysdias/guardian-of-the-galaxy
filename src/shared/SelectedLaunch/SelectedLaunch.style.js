@@ -17,7 +17,7 @@ export const Card = styled.section`
     font-weight: ${theme.typography.weight.bold};
   }
 
-  .description {
+  .details {
     color: ${theme.colors.purple[1]};
     margin-top: 50px;
     font-size: ${theme.typography.normal};
