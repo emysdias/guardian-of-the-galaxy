@@ -1,4 +1,5 @@
 body {
+  position: relative;
   background-color: #1D1B38;
   background-image: url("./shared/assets/starry.png");
   margin: 0;

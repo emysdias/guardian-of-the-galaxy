@@ -1,12 +1,12 @@
 import React from "react";
-import { LaunchesSelection } from "../../shared";
+import { LaunchesSelection, Header } from "../../shared";
 import Icons from "../../shared/assets";
 import { Container } from "./Begin.styles";
 
 const Begin = () => {
   return (
     <Container>
-      <section className="title">SpaceX Launches</section>
+      <Header text={"SpaceX Launches"} />
       <section className="cards">
         <LaunchesSelection text={"Past\nLaunches"} icon={Icons.groot1} />
         <LaunchesSelection text={"Latest\nLaunches"} icon={Icons.groot2} />

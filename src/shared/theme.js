@@ -10,8 +10,8 @@ const theme = {
     white: "#FFFFFF",
   },
   typography: {
-    title: "30px",
-    normal: "20px",
+    title: "24px",
+    normal: "16px",
     weight: {
       bold: "bold",
     },
@@ -23,13 +23,15 @@ const theme = {
       3: "20px",
     },
     porcent: {
-      1: "10%",
+      1: "8%",
+      2: "100%",
     },
   },
   size: {
     1: "250px",
     2: "230px",
     3: "79px",
+    4: "35px"
   },
 };
 
