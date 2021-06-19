@@ -10,10 +10,11 @@ export const Container = styled.section`
     align-items: center;
     position: absolute;
     margin-left: ${theme.spacing.pixels[3]};
-    
+
     img {
       height: ${theme.size[4]};
       width: ${theme.size[4]};
+      cursor: pointer;
     }
 
     button {

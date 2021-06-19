@@ -7,9 +7,9 @@ export const Card = styled.section`
   height: ${theme.size[2]};
   background-color: ${theme.colors.white};
   border-radius: ${theme.border[1]};
-  margin-top: 50px;
+  margin-top: 50px; //TODO
   text-align: center;
-  padding: 20px;
+  padding: 20px; //TODO
 
   .name {
     color: ${theme.colors.purple[5]};
@@ -19,7 +19,7 @@ export const Card = styled.section`
 
   .details {
     color: ${theme.colors.purple[1]};
-    margin-top: 50px;
+    margin-top: 50px; //TODO
     font-size: ${theme.typography.normal};
     font-weight: ${theme.typography.weight.light};
   }
@@ -27,8 +27,8 @@ export const Card = styled.section`
   .button {
     margin: 0;
     position: absolute;
-    left: 46%;
-    margin-top: 200px;
+    left: 46%; //TODO
+    margin-top: 200px; //TODO
   }
 
   button {
@@ -38,7 +38,7 @@ export const Card = styled.section`
     color: ${theme.colors.purple[4]};
     font-weight: ${theme.typography.weight.bold};
     border-radius: ${theme.border[2]};
-    height: 30px;
-    width: 100px;
+    height: 30px; //TODO
+    width: 100px; //TODO
   }
 `;
