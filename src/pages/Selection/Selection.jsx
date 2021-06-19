@@ -9,6 +9,8 @@ const Selection = () => {
       <section className="cards">
         <SelectedLaunch />
         <SelectedLaunch />
+        <SelectedLaunch />
+        <SelectedLaunch />
       </section>
     </Container>
   );

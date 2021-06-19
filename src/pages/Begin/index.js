@@ -1,1 +1,1 @@
-export { default } from './Begin';
+export { default } from "./Begin";

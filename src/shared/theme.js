@@ -14,6 +14,7 @@ const theme = {
     normal: "16px",
     weight: {
       bold: "bold",
+      light: "400"
     },
   },
   spacing: {
@@ -31,7 +32,11 @@ const theme = {
     1: "250px",
     2: "230px",
     3: "79px",
-    4: "35px"
+    4: "35px",
+  },
+  border: {
+    1: "20px",
+    2: "10px",
   },
 };
 

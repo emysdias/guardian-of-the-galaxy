@@ -5,7 +5,7 @@ export const Card = styled.section`
   width: ${theme.size[2]};
   height: ${theme.size[1]};
   background-color: ${theme.colors.white};
-  border-radius: ${theme.spacing.pixels[3]};
+  border-radius: ${theme.border[1]};
   text-align: center;
   margin-right: ${theme.spacing.pixels[3]};
 

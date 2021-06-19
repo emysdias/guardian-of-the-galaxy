@@ -1,9 +1,9 @@
 import styled from "styled-components";
-// import theme from "../../shared/theme";
+import theme from "../../shared/theme";
 
 export const Container = styled.section`
   .cards {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: ${theme.spacing.pixels[3]};
+    margin-right: ${theme.spacing.pixels[3]};
   }
 `;
