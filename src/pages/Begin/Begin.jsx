@@ -9,6 +9,7 @@ const Begin = () => {
     <Container>
       <Header text={"SpaceX Launches"} />
       <section className="cards">
+      {/* TODO */}
         <Link style={{ textDecoration: "none" }} to={{ pathname: "/past" }}>
           <LaunchesSelection text={"Past\nLaunches"} icon={Icons.groot1} />
         </Link>

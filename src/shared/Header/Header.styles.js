@@ -9,7 +9,7 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     position: absolute;
-    margin-left: ${theme.spacing.pixels[3]};
+    margin-left: ${theme.spacing.pixels[2]};
 
     img {
       height: ${theme.size[4]};
@@ -29,7 +29,7 @@ export const Container = styled.section`
     display: block;
     text-align: center;
     color: ${theme.colors.white};
-    font-size: ${theme.typography.title};
+    font-size: ${theme.typography.header};
     font-weight: ${theme.typography.weight.bold};
   }
 `;

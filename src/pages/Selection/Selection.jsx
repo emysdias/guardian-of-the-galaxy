@@ -20,7 +20,7 @@ const Selection = () => {
           setLaunches(response.data);
         }
       } catch (error) {
-        console.log("Ocorreu um erro!");
+        console.log("Error!");
       }
     };
 
@@ -29,13 +29,16 @@ const Selection = () => {
 
   return (
     <Container>
-      <Header text={`SpaceX ${location.pathname.substr(1,)} launches`} icon />
+      <Header text={`SpaceX ${location.pathname.substr(1)} launches`} icon />
       {launches &&
         launches.map((item) => (
           <section className="cards" key={item.id}>
             <SelectedLaunch
               name={item.name}
               details={item.details ? item.details : "No details"}
+              rocket={item.rocket}
+              date={item.date_local}
+              flight={item.flight_number}
             />
           </section>
         ))}
@@ -44,6 +47,9 @@ const Selection = () => {
           <SelectedLaunch
             name={launch.name}
             details={launch.details ? launch.details : "No details"}
+            rocket={launch.rocket}
+            date={launch.date_local}
+            flight={launch.flight_number}
           />
         </section>
       )}

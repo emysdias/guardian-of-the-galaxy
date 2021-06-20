@@ -4,22 +4,23 @@ import theme from "../theme";
 export const Card = styled.section`
   display: flex;
   flex-direction: column;
-  height: ${theme.size[2]};
   background-color: ${theme.colors.white};
   border-radius: ${theme.border[1]};
   margin-top: 50px; //TODO
   text-align: center;
   padding: 20px; //TODO
+  padding-top: 0;
 
-  .name {
+  .title {
+    margin-top: 20px;
     color: ${theme.colors.purple[5]};
-    font-size: ${theme.typography.normal};
+    font-size: ${theme.typography.title};
     font-weight: ${theme.typography.weight.bold};
   }
 
-  .details {
+  .text {
+    margin-top: 10px;
     color: ${theme.colors.purple[1]};
-    margin-top: 50px; //TODO
     font-size: ${theme.typography.normal};
     font-weight: ${theme.typography.weight.light};
   }

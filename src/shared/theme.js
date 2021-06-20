@@ -10,7 +10,8 @@ const theme = {
     white: "#FFFFFF",
   },
   typography: {
-    title: "24px",
+    header: "24px",
+    title: "20px",
     normal: "16px",
     weight: {
       bold: "bold",
@@ -19,7 +20,7 @@ const theme = {
   },
   spacing: {
     pixels: {
-      1: "50px",
+      1: "40px",
       2: "30px",
       3: "20px",
     },
