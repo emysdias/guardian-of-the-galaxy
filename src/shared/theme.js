@@ -15,7 +15,7 @@ const theme = {
     normal: "16px",
     weight: {
       bold: "bold",
-      light: "400"
+      light: "400",
     },
   },
   spacing: {
@@ -35,11 +35,24 @@ const theme = {
     1: "250px",
     2: "230px",
     3: "79px",
-    4: "30px",
+    4: "65px",
+    5: "30px",
+    6: "25px",
   },
   border: {
     1: "20px",
     2: "10px",
+  },
+  media: {
+    size: {
+      2: "380px",
+      1: "440px",
+    },
+    typography: {
+      header: "20px",
+      title: "16px",
+      normal: "12px",
+    },
   },
 };
 

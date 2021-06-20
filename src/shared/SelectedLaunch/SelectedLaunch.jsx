@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import api from "../../services/api";
-import { Card } from "./SelectedLaunch.style";
+import { Container } from "./SelectedLaunch.style";
 
 const SelectedLaunch = ({ name, details, rocket, date, flight }) => {
   let newDate = new Date(date);
@@ -22,7 +22,7 @@ const SelectedLaunch = ({ name, details, rocket, date, flight }) => {
   return (
     <section>
       {name && (
-        <Card>
+        <Container>
           <section className="title">{name}</section>
           <section className="text">{details}</section>
           <section className="title">Rocket</section>
@@ -31,7 +31,7 @@ const SelectedLaunch = ({ name, details, rocket, date, flight }) => {
           <section className="text">{newDate.toLocaleDateString()}</section>
           <section className="title">Flight Number</section>
           <section className="text">{flight}</section>
-        </Card>
+        </Container>
       )}
     </section>
   );

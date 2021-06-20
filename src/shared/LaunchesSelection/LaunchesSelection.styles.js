@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import theme from "../theme";
 
-export const Card = styled.section`
+export const Container = styled.section`
   width: ${theme.size[2]};
   height: ${theme.size[1]};
   background-color: ${theme.colors.white};

@@ -1,34 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Header, SelectedLaunch } from "../../shared";
-import { Container, Button } from "./Selection.styles";
+import { Header, SelectedLaunch, Button } from "../../shared";
+import { Container } from "./Selection.styles";
 import { useLocation } from "react-router-dom";
 
 import api from "../../services/api";
-import Icons from "../../shared/assets";
 
 const Selection = () => {
   const [launches, setLaunches] = useState([]);
   const [launch, setLaunch] = useState([]);
-  const [visible, setVisible] = useState(false);
   const location = useLocation();
 
-  const handleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 300) {
-      setVisible(true);
-    } else if (scrolled <= 300) {
-      setVisible(false);
-    }
+  const ucfirst = (str) => {
+    var firstLetter = str.substr(0, 1);
+    return firstLetter.toUpperCase() + str.substr(1);
   };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  window.addEventListener("scroll", handleVisible);
 
   useEffect(() => {
     const handleLaunches = async () => {
@@ -49,7 +34,7 @@ const Selection = () => {
 
   return (
     <Container>
-      <Header text={`SpaceX ${location.pathname.substr(1)} launches`} icon />
+      <Header text={`${ucfirst(location.pathname.substr(1))} launches`} icon />
       {launches &&
         launches.map((item) => (
           <section className="cards" key={item.id}>
@@ -73,13 +58,7 @@ const Selection = () => {
           />
         </section>
       )}
-      {visible && (
-        <section className="button">
-          <Button onClick={() => scrollToTop()} type="button">
-            <img src={Icons.up} alt="up" />
-          </Button>
-        </section>
-      )}
+      <Button />
     </Container>
   );
 };

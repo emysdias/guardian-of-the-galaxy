@@ -14,8 +14,8 @@ export const Container = styled.section`
     margin-left: ${theme.spacing.pixels[2]};
 
     img {
-      height: ${theme.size[4]};
-      width: ${theme.size[4]};
+      height: ${theme.size[5]};
+      width: ${theme.size[5]};
       cursor: pointer;
     }
 
@@ -33,5 +33,11 @@ export const Container = styled.section`
     color: ${theme.colors.white};
     font-size: ${theme.typography.header};
     font-weight: ${theme.typography.weight.bold};
+  }
+
+  @media (max-width: ${theme.media.size[1]}) {
+    .title {
+      font-size: ${theme.media.typography.header};
+    }
   }
 `;

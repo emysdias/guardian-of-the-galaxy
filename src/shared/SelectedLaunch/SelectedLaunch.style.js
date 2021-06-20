@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import theme from "../theme";
 
-export const Card = styled.section`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   background-color: ${theme.colors.white};
@@ -26,5 +26,14 @@ export const Card = styled.section`
     color: ${theme.colors.purple[1]};
     font-size: ${theme.typography.normal};
     font-weight: ${theme.typography.weight.light};
+  }
+
+  @media (max-width: ${theme.media.size[1]}) {
+    .title {
+      font-size: ${theme.media.typography.title};
+    }
+    .text {
+      font-size: ${theme.media.typography.normal};
+    }
   }
 `;
