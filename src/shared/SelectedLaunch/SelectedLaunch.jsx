@@ -20,16 +20,20 @@ const SelectedLaunch = ({ name, details, rocket, date, flight }) => {
   }, [rocket]);
 
   return (
-    <Card>
-      <section className="title">{name}</section>
-      <section className="text">{details}</section>
-      <section className="title">Rocket</section>
-      <section className="text">{nameRocket ? nameRocket : "----"}</section>
-      <section className="title">Date</section>
-      <section className="text">{newDate.toLocaleDateString()}</section>
-      <section className="title">Flight Number</section>
-      <section className="text">{flight}</section>
-    </Card>
+    <section>
+      {name && (
+        <Card>
+          <section className="title">{name}</section>
+          <section className="text">{details}</section>
+          <section className="title">Rocket</section>
+          <section className="text">{nameRocket ? nameRocket : "----"}</section>
+          <section className="title">Date</section>
+          <section className="text">{newDate.toLocaleDateString()}</section>
+          <section className="title">Flight Number</section>
+          <section className="text">{flight}</section>
+        </Card>
+      )}
+    </section>
   );
 };
 

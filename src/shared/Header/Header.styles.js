@@ -4,6 +4,8 @@ import theme from "../../shared/theme";
 export const Container = styled.section`
   display: flex;
   margin-top: ${theme.spacing.pixels[1]};
+  position: relative;
+  z-index: 1;
 
   .arrow {
     display: flex;

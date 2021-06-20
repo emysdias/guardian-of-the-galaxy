@@ -7,6 +7,8 @@ export const Card = styled.section`
   background-color: ${theme.colors.white};
   border-radius: ${theme.border[1]};
   text-align: center;
+  position: relative;
+  z-index: 1;
   margin-right: ${theme.spacing.pixels[3]};
 
   img {
