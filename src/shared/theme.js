@@ -45,13 +45,16 @@ const theme = {
   },
   media: {
     size: {
-      2: "380px",
       1: "440px",
+      2: "550px",
+      3: "1100px",
+      4: "200px",
+      5: "180px",
     },
     typography: {
       header: "20px",
       title: "16px",
-      normal: "12px",
+      normal: "14px",
     },
   },
 };

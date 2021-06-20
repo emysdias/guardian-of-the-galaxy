@@ -9,19 +9,28 @@ const Begin = () => {
     <Container>
       <Header text={"SpaceX Launches"} />
       <section className="cards">
-      {/* TODO */}
-        <Link style={{ textDecoration: "none" }} to={{ pathname: "/past" }}>
-          <LaunchesSelection text={"Past\nLaunches"} icon={Icons.groot1} />
-        </Link>
-        <Link style={{ textDecoration: "none" }} to={{ pathname: "/latest" }}>
-          <LaunchesSelection text={"Latest\nLaunches"} icon={Icons.groot2} />
-        </Link>
-        <Link style={{ textDecoration: "none" }} to={{ pathname: "/next" }}>
-          <LaunchesSelection text={"Next\nLaunches"} icon={Icons.groot3} />
-        </Link>
-        <Link style={{ textDecoration: "none" }} to={{ pathname: "/upcoming" }}>
-          <LaunchesSelection text={"Upcoming\nLaunches"} icon={Icons.groot4} />
-        </Link>
+        <section className="cardsSection">
+          <Link style={{ textDecoration: "none" }} to={{ pathname: "/past" }}>
+            <LaunchesSelection text={"Past\nLaunches"} icon={Icons.groot1} />
+          </Link>
+          <Link style={{ textDecoration: "none" }} to={{ pathname: "/latest" }}>
+            <LaunchesSelection text={"Latest\nLaunches"} icon={Icons.groot2} />
+          </Link>
+        </section>
+        <section className="cardsSection">
+          <Link style={{ textDecoration: "none" }} to={{ pathname: "/next" }}>
+            <LaunchesSelection text={"Next\nLaunches"} icon={Icons.groot3} />
+          </Link>
+          <Link
+            style={{ textDecoration: "none" }}
+            to={{ pathname: "/upcoming" }}
+          >
+            <LaunchesSelection
+              text={"Upcoming\nLaunches"}
+              icon={Icons.groot4}
+            />
+          </Link>
+        </section>
       </section>
     </Container>
   );
