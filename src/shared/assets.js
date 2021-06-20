@@ -1,5 +1,6 @@
 import Earth from "./assets/earth.png";
 import Arrow from "./assets/arrow.png";
+import Up from "./assets/up.png";
 import SpaceX from "./assets/spacex.jpg";
 import Groot1 from "./assets/Groot1.png";
 import Groot2 from "./assets/Groot2.png";
@@ -13,6 +14,7 @@ const Icons = {
   groot3: Groot3,
   groot4: Groot4,
   arrow: Arrow,
+  up: Up,
   spacex: SpaceX,
 };
 

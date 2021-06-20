@@ -25,7 +25,7 @@ export const Container = styled.section`
   }
 
   .title {
-    width: ${theme.spacing.porcent[2]};
+    width: ${theme.spacing.porcent[3]};
     display: block;
     text-align: center;
     color: ${theme.colors.white};

@@ -1,17 +1,37 @@
 import React, { useState, useEffect } from "react";
 import { Header, SelectedLaunch } from "../../shared";
-import { Container } from "./Selection.styles";
+import { Container, Button } from "./Selection.styles";
 import { useLocation } from "react-router-dom";
 
 import api from "../../services/api";
+import Icons from "../../shared/assets";
 
 const Selection = () => {
   const [launches, setLaunches] = useState([]);
   const [launch, setLaunch] = useState([]);
+  const [visible, setVisible] = useState(false);
   const location = useLocation();
 
+  const handleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  window.addEventListener("scroll", handleVisible);
+
   useEffect(() => {
-    const launches = async () => {
+    const handleLaunches = async () => {
       try {
         const response = await api.get(`launches${location.pathname}`);
         if (typeof response.data.length === "undefined") {
@@ -24,8 +44,7 @@ const Selection = () => {
         alert("Occur an error, try refresh the page!");
       }
     };
-
-    launches();
+    handleLaunches();
   }, [location.pathname]);
 
   return (
@@ -52,6 +71,13 @@ const Selection = () => {
             date={launch.date_local}
             flight={launch.flight_number}
           />
+        </section>
+      )}
+      {visible && (
+        <section className="button">
+          <Button onClick={() => scrollToTop()} type="button">
+            <img src={Icons.up} alt="up" />
+          </Button>
         </section>
       )}
     </Container>
