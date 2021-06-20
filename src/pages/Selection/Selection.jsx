@@ -20,7 +20,8 @@ const Selection = () => {
           setLaunches(response.data);
         }
       } catch (error) {
-        console.log("Error!");
+        console.log(error);
+        alert("Occur an error, try refresh the page!");
       }
     };
 

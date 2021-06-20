@@ -3,8 +3,8 @@ import api from "../../services/api";
 import { Card } from "./SelectedLaunch.style";
 
 const SelectedLaunch = ({ name, details, rocket, date, flight }) => {
-  const [nameRocket, setNameRocket] = useState([]);
   let newDate = new Date(date);
+  const [nameRocket, setNameRocket] = useState(false);
 
   useEffect(() => {
     const handleRocket = async () => {
@@ -12,10 +12,11 @@ const SelectedLaunch = ({ name, details, rocket, date, flight }) => {
         const response = await api.get(`rockets/${rocket}`);
         setNameRocket(response.data.name);
       } catch (error) {
-        console.log("Error!");
+        console.log(error);
+        alert("Occur an error, try refresh the page!");
       }
     };
-    handleRocket();
+    if (rocket) handleRocket();
   }, [rocket]);
 
   return (
