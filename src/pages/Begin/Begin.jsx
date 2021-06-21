@@ -1,7 +1,6 @@
 import React from "react";
 import { LaunchesSelection, Header } from "../../shared";
 import Icons from "../../shared/assets";
-import { Link } from "react-router-dom";
 import { Container } from "./Begin.styles";
 
 const Begin = () => {
@@ -10,26 +9,29 @@ const Begin = () => {
       <Header text={"SpaceX Launches"} />
       <section className="cards">
         <section className="cardsSection">
-          <Link style={{ textDecoration: "none" }} to={{ pathname: "/past" }}>
-            <LaunchesSelection text={"Past\nLaunches"} icon={Icons.groot1} />
-          </Link>
-          <Link style={{ textDecoration: "none" }} to={{ pathname: "/latest" }}>
-            <LaunchesSelection text={"Latest\nLaunches"} icon={Icons.groot2} />
-          </Link>
+          <LaunchesSelection
+            url={"/past"}
+            text={"Past\nLaunches"}
+            icon={Icons.groot1}
+          />
+          <LaunchesSelection
+            url={"/latest"}
+            text={"Latest\nLaunches"}
+            icon={Icons.groot2}
+          />
         </section>
         <section className="cardsSection">
-          <Link style={{ textDecoration: "none" }} to={{ pathname: "/next" }}>
-            <LaunchesSelection text={"Next\nLaunches"} icon={Icons.groot3} />
-          </Link>
-          <Link
-            style={{ textDecoration: "none" }}
-            to={{ pathname: "/upcoming" }}
-          >
-            <LaunchesSelection
-              text={"Upcoming\nLaunches"}
-              icon={Icons.groot4}
-            />
-          </Link>
+          <LaunchesSelection
+            url={"/next"}
+            text={"Next\nLaunches"}
+            icon={Icons.groot3}
+          />
+
+          <LaunchesSelection
+            url={"/upcoming"}
+            text={"Upcoming\nLaunches"}
+            icon={Icons.groot4}
+          />
         </section>
       </section>
     </Container>
