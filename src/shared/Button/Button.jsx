@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Icons from "../assets";
 import { Container } from "./Button.styles";
 
@@ -14,6 +14,13 @@ const Button = () => {
     }
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleVisible);
+    return function cleanupListener() {
+      window.removeEventListener("scroll", handleVisible);
+    };
+  }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -21,8 +28,6 @@ const Button = () => {
     });
   };
 
-  window.addEventListener("scroll", handleVisible);
-  
   return (
     <section>
       {visible && (
