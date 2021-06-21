@@ -25,12 +25,21 @@ $ git clone https://github.com/emysdias/guardian-of-the-galaxy.git
 ```
 Enter the repository folder and download dependencies
 ```bash
-$ npm install or yarn install
+$ npm install
+```
+or
+
+```bash
+$ yarn install
 ```
 
 Finally, run the application
 ```bash
-$ npm start or yarn start
+$ npm start
 ```
+or
 
+```bash
+$ yarn start
+```
 🚀🚀🚀🚀🚀🚀🚀
