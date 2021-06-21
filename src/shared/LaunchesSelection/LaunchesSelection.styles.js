@@ -10,6 +10,7 @@ export const Container = styled.section`
   position: relative;
   z-index: 1;
   margin-right: ${theme.spacing.pixels[3]};
+  cursor: pointer;
 
   img {
     margin-top: ${theme.spacing.pixels[1]};
