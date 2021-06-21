@@ -32,6 +32,7 @@ export const Container = styled.section`
     .title {
       font-size: ${theme.media.typography.title};
     }
+    
     .text {
       font-size: ${theme.media.typography.normal};
     }

@@ -16,6 +16,7 @@ export const Container = styled.section`
     width: ${theme.size[3]};
     height: ${theme.size[3]};
   }
+  
   .CardText {
     margin-top: ${theme.spacing.pixels[3]};
     color: ${theme.colors.purple[4]};
