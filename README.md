@@ -1,6 +1,6 @@
 # 🏆 Guardians of the galaxy
 
-&emsp;&emsp;Site que consome uma api pública sobre a SpaceX. <br> Documentação da api: https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4
+Site que consome uma api pública sobre a SpaceX que fornece dados de diversos tipos, bem interessantes <br> Documentação da api: https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4
 
 Link do site com deploy: https://emily-guardians-of-the-galaxy.herokuapp.com/
 
