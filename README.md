@@ -1,32 +1,32 @@
 # 🏆 Guardians of the galaxy
 
-Site que consome uma api pública sobre a SpaceX que fornece dados de diversos tipos, bem interessantes <br> Documentação da api: https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4
+Site that consumes a public api about SpaceX that offers data of various types, very interesting <br> Api Documentation: https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4
 
-Link do site com deploy: https://emily-guardians-of-the-galaxy.herokuapp.com/
+Site link with deploy: https://emily-guardians-of-the-galaxy.herokuapp.com/
 
-## 🔨 Restrições
+## 🔨 Restrictions
 
-- Está sendo usado uma api pública, então o servidor pode cair e pode acabar não funcionando em algum momento.
-- Está sendo usado biblioteca de terceiros, que um dia tem a possibilidade de dar problema.
+- A public api is being used, so the server might crash and might end up not working at some point.
+- Third party library is being used, which one day has the possibility of causing problems.
 
-## ✔️ Pré requisitos
+## ✔️ Prerequisites
 
 - Node/ npm.
 - Yarn.
 
-## 👉 Como rodar
+## 👉 How to run
 
-Para clonar o repositório
+To clone the repository
 
 ```bash
 $ git clone https://github.com/emysdias/guardian-of-the-galaxy.git
 ```
-Entre na pasta do repositório e baixe as dependências
+Enter the repository folder and download dependencies
 ```bash
 $ npm install
 ```
 
-Por fim, rode a aplicação
+Finally, run the application
 ```bash
 $ npm start
 ```
