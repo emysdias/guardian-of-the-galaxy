@@ -13,6 +13,7 @@ Site link with deploy: https://emily-guardians-of-the-galaxy.herokuapp.com/
 
 - Node/ npm.
 - Yarn.
+- The code has npm version 6.14.11
 
 ## 👉 How to run
 
