@@ -2,6 +2,9 @@
 
 Site that consumes a public api about SpaceX that offers data of various types, very interesting <br> Api Documentation: https://github.com/r-spacex/SpaceX-API/tree/master/docs/v4
 
+
+Code climate: https://codeclimate.com/github/emysdias/guardian-of-the-galaxy
+
 Site link with deploy: https://emily-guardians-of-the-galaxy.herokuapp.com/
 
 ## 🔨 Restrictions
