@@ -8,7 +8,6 @@ import api from "../../services/api";
 
 const Selection = () => {
   const [launches, setLaunches] = useState([]);
-  const [launch, setLaunch] = useState([]);
   const [loading, setLoading] = useState(true);
   const location = useLocation();
 
@@ -23,7 +22,7 @@ const Selection = () => {
       try {
         const response = await api.get(`launches${location.pathname}`);
         if (typeof response.data.length === "undefined") {
-          setLaunch(response.data);
+          setLaunches([response.data]);
         } else {
           setLaunches(response.data);
         }
@@ -57,17 +56,6 @@ const Selection = () => {
                 />
               </section>
             ))}
-          {launch && (
-            <section className="cards">
-              <SelectedLaunch
-                name={launch.name}
-                details={launch.details ? launch.details : "No details"}
-                rocket={launch.rocket}
-                date={launch.date_local}
-                flight={launch.flight_number}
-              />
-            </section>
-          )}
         </section>
       )}
       <Button />

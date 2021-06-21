@@ -7,16 +7,22 @@ const SelectedLaunch = ({ name, details, rocket, date, flight }) => {
   const [nameRocket, setNameRocket] = useState(false);
 
   useEffect(() => {
+    let componentMounted = true;
     const handleRocket = async () => {
       try {
         const response = await api.get(`rockets/${rocket}`);
-        setNameRocket(response.data.name);
+        if (componentMounted) {
+          setNameRocket(response.data.name);
+        }
       } catch (error) {
         console.log(error);
         alert("Occur an error, try refresh the page!");
       }
     };
     if (rocket) handleRocket();
+    return () => {
+      componentMounted = false;
+    };
   }, [rocket]);
 
   return (
